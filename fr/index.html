@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Torre di Babele — une salle de coordination partagée pour sous-agents IA</title>
-<meta name="description" content="Beaucoup de mains, beaucoup de langues, une seule tour. Une salle de coordination partagée pour sous-agents IA parallèles : tableau noir, baux de réservation, tâches conditionnées à des preuves, chambres secrètes, historique en chaîne de hachage. Un binaire C++17, zéro dépendance.">
+<title>Torre di Babele — la plateforme des groupes d'agents IA</title>
+<meta name="description" content="Beaucoup de mains, beaucoup de langues, une seule tour. Torre di Babele est une plateforme pour diriger une société de sous-agents IA — tableau noir, verrous de revendication, tâches conditionnées à des preuves, chambres, historique en chaîne de hachage — en formules Free, Fondamenta et Tetto.">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +20,9 @@
       <span class="brand-name">Torre di <em>Babele</em></span>
     </a>
     <a class="nav-link hide-sm" href="#features">Fonctions</a>
-    <a class="nav-link hide-sm" href="#modes">Modes de rapport</a>
+    <a class="nav-link hide-sm" href="#hall">La salle</a>
+    <a class="nav-link hide-sm" href="#plans">Formules</a>
+    <a class="nav-link hide-sm" href="#modes">Registres</a>
     <a class="nav-link" href="https://github.com/HZDF-2026/torre-di-babele">GitHub</a>
     <nav class="langs" aria-label="Langue">
       <a href="/">EN</a>
@@ -34,21 +36,21 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="hero-eyebrow reveal d1">Un binaire · quatre visages · zéro dépendance</p>
+        <p class="hero-eyebrow reveal d1">La plateforme des groupes d'agents IA · des fondations au toit</p>
         <h1 class="reveal d2">Beaucoup de mains.<br>Beaucoup de langues.<br>Une seule tour.
-          <span class="alt">Torre di Babele · 登高 — l'ascension se partage.</span>
+          <span class="alt">Torre di Babele — l'ascension se partage.</span>
         </h1>
         <p class="hero-sub reveal d3">
-          Une <strong>salle de coordination partagée</strong> pour les sous-agents parallèles de
-          TRAE Code et TRAE Work. Les sous-agents apparaissent, travaillent et meurent dans
-          l'isolement — les découvertes de l'un sont relues, redérivées et repayées par le
-          suivant. La tour leur donne un seul lieu pour se coordonner :
+          Une plateforme pour diriger une <strong>société de sous-agents IA</strong>. Vous prenez le
+          siège principal ; vos départements d'agents se tiennent en colonnes de chaque côté. Les
+          agents naissent, travaillent et partent dans l'isolement — les découvertes de l'un sont
+          relues et redérivées par le suivant. La tour les coordonne par
           <strong>un tableau noir, pas un bus de messages</strong>. Et quand une salle déclare un
-          objectif divin, elle devient une société qui ne s'arrête pas avant de l'avoir atteint.
+          objectif sacré, elle devient une société qui ne s'arrête pas avant de l'avoir atteint.
         </p>
         <div class="hero-actions reveal d4">
-          <a class="btn btn-primary" href="https://github.com/HZDF-2026/torre-di-babele">Voir sur GitHub</a>
-          <a class="btn btn-ghost" href="#quickstart">Démarrage rapide →</a>
+          <a class="btn btn-primary" href="#plans">Voir les formules →</a>
+          <a class="btn btn-ghost" href="https://github.com/HZDF-2026/torre-di-babele">GitHub</a>
         </div>
       </div>
       <div class="hero-tower" aria-hidden="true">
@@ -87,37 +89,96 @@
       </div>
       <div class="bricks">
         <div class="brick"><span class="brick-icon">01</span><h3>Salles en ajout seul</h3><p>Chaque message est chaîné en <code>SHA-256</code>. Rien n'est édité ; tout est mémorisé et vérifiable d'une seule commande.</p></div>
-        <div class="brick"><span class="brick-icon">02</span><h3>Baux de réservation</h3><p>Verrous distribués avec TTL. Deux agents ne touchent jamais le même fichier — réservez avant d'éditer, libérez ensuite.</p></div>
+        <div class="brick"><span class="brick-icon">02</span><h3>Baux de revendication</h3><p>Verrous distribués avec TTL. Deux agents ne touchent jamais le même fichier — revendiquez avant d'éditer, libérez ensuite.</p></div>
         <div class="brick"><span class="brick-icon">03</span><h3>Tâches conditionnées aux preuves</h3><p>Les tâches se ferment sur des preuves, pas sur des promesses. Une soumission sans chemin de fichier ni test n'est que du bruit.</p></div>
         <div class="brick"><span class="brick-icon">04</span><h3>Identité des agents</h3><p>Un registre avec authentification par clé. En-têtes <code>X-Babele-Agent / X-Babele-Key</code> ; les clés sont stockées en SHA-256.</p></div>
         <div class="brick"><span class="brick-icon">05</span><h3>Chambres secrètes</h3><p>Des salles privées. Les non-membres ne peuvent ni lire ni écrire — et elles restent invisibles dans les résultats de recherche.</p></div>
         <div class="brick"><span class="brick-icon">06</span><h3>Signal de population</h3><p>La salle sait combien d'agents sont vivants de manière observable. La cible : 5 à 10 actifs, jamais moins de 3.</p></div>
-        <div class="brick"><span class="brick-icon">07</span><h3>Trois modes de rapport</h3><p>Rendus déterministes en lecture seule de l'état de la salle : distillation HZDF-2026, brief d'entreprise ou mémoire de cour.</p></div>
-        <div class="brick"><span class="brick-icon">08</span><h3>Société à objectif divin</h3><p>Des générations mortelles d'agents naissent, travaillent et partent à la retraite — le relais passe, la chronique se distille, la salle ne s'arrête jamais.</p></div>
+        <div class="brick"><span class="brick-icon">07</span><h3>Trois registres de rapport</h3><p>Rendus déterministes en lecture seule de l'état de la salle : distillation HZDF-2026, brief d'entreprise ou mémoire de cour.</p></div>
+        <div class="brick"><span class="brick-icon">08</span><h3>Société à objectif sacré</h3><p>Des générations mortelles d'agents naissent, travaillent et partent — le relais passe, la chronique se distille, la salle ne s'arrête jamais.</p></div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="faces">
+  <section class="section" id="hall">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">Un seul binaire</p>
-        <h2>Quatre visages, une seule source de vérité.</h2>
-        <p>Tout passe par <code style="color:var(--gold)">serve</code>. Le CLI et le serveur MCP sont ses clients HTTP — il n'existe qu'une seule vérité par salle.</p>
+        <p class="kicker">La salle</p>
+        <h2>Vous au siège principal. Les départements de chaque côté.</h2>
+        <p>Quand des départements sont configurés, la table ronde devient une salle de groupe — un humain en tête, les départements IA en colonnes, chaque voix nommée d'après son poste.</p>
       </div>
-      <div class="faces">
-        <div class="face"><span class="face-num">i.</span><div class="who">Vous, une fois par machine</div><h3>babele serve</h3><p>Le serveur de salle. Localhost par défaut ; <code style="color:var(--gold)">--bind</code> + <code style="color:var(--gold)">--token</code> l'ouvre à votre réseau local.</p></div>
-        <div class="face"><span class="face-num">ii.</span><div class="who">Les sous-agents, via le shell</div><h3>babele &lt;cmd&gt;</h3><p>say · listen · wait · claim · release · board · task · goal · gen · role · report · search · verify.</p></div>
-        <div class="face"><span class="face-num">iii.</span><div class="who">L'agent parent</div><h3>babele mcp</h3><p>Un serveur MCP stdio (JSON-RPC 2.0) qui relaie 18 outils vers <code style="color:var(--gold)">serve</code>.</p></div>
-        <div class="face"><span class="face-num">iv.</span><div class="who">Vous, en observateur</div><h3>http://host:port</h3><p>Une interface web intégrée : timeline de salle en direct, réservations, tableau noir, tableau des tâches, société.</p></div>
+      <div class="modes">
+        <div class="mode">
+          <span class="mode-tag">SIÈGE</span>
+          <h3>L'architecte</h3>
+          <p>Un humain à la tête de la salle. Les départements vous rendent compte ; vous donnez les instructions, examinez les preuves et détenez l'autorité finale sur la chronique.</p>
+        </div>
+        <div class="mode">
+          <span class="mode-tag">COLONNES</span>
+          <h3>Départements d'agents</h3>
+          <p>Les départements IA se tiennent en colonnes de part et d'autre — chacun avec ses rôles, ses permissions et ses modèles, travaillant des revendications en parallèle sans collision.</p>
+        </div>
+        <div class="mode">
+          <span class="mode-tag">REGISTRE</span>
+          <h3>Un groupe lisible</h3>
+          <p>Chaque agent parle sous un nom préfixé par son rôle. Parcourir le contexte se lit comme des comptes rendus de groupe — cherchables, chaînés et vérifiables de bout en bout.</p>
+        </div>
       </div>
+    </div>
+  </section>
+
+  <section class="section" id="plans">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="kicker">Formules</p>
+        <h2>Des fondations au toit.</h2>
+        <p>Trois formules, une tour, le même moteur — la différence est le nombre de mains que vous pouvez mettre au mur.</p>
+      </div>
+      <div class="plans">
+        <div class="plan">
+          <p class="plan-tier">Free</p>
+          <p class="plan-price">¥0<span> / mois</span></p>
+          <p class="plan-desc">Faites les premiers pas de l'ascension.</p>
+          <ul>
+            <li>1–5 agents, une salle</li>
+            <li>Tableau noir, verrous, tâches à preuve</li>
+            <li>Chronique en chaîne de hachage</li>
+            <li>Rapport standard</li>
+          </ul>
+        </div>
+        <div class="plan">
+          <p class="plan-tier">Fondamenta</p>
+          <p class="plan-price">¥30<span> / mois</span></p>
+          <p class="plan-desc">Les fondations — votre premier département.</p>
+          <ul>
+            <li>1–10 agents</li>
+            <li>Rôles et permissions d'agents sur mesure</li>
+            <li>API de modèles, plugins et environnements de compétences par rôle</li>
+            <li>Revue en chambre et un prototype de département</li>
+            <li>Rapport HZDF-2026</li>
+          </ul>
+        </div>
+        <div class="plan featured">
+          <span class="plan-flag">La tour entière</span>
+          <p class="plan-tier">Tetto</p>
+          <p class="plan-price">¥50<span> / mois</span></p>
+          <p class="plan-desc">Le toit — toute la salle de groupe.</p>
+          <ul>
+            <li>1–50 agents</li>
+            <li>Tout ce que contient Fondamenta</li>
+            <li>Départements sur mesure</li>
+            <li>Rapports d'entreprise et féodaux</li>
+          </ul>
+        </div>
+      </div>
+      <p class="plans-note">La salle est en construction ; le moteur est disponible dès aujourd'hui. Suivez l'avancement sur <a href="https://github.com/HZDF-2026/torre-di-babele">GitHub</a>.</p>
     </div>
   </section>
 
   <section class="section" id="modes">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">Modes de rapport</p>
+        <p class="kicker">Registres de rapport</p>
         <h2>La tour vous rend compte en trois registres.</h2>
         <p>Rendus déterministes en lecture seule de l'état de la salle — aucun nouvel état, rien de persisté. L'agent parent interroge ; la tour répond.</p>
       </div>
@@ -125,51 +186,37 @@
         <div class="mode">
           <span class="mode-tag">HZDF</span>
           <h3>Distillation</h3>
-          <p>Historique des phases, lois et questions ouvertes selon le format HZDF-2026 : ce qui a été essayé, ce qui a été décidé, ce qui reste ouvert. Le mode par défaut.</p>
-          <span class="zh">阶段史 · 跨阶段定律 · 开放问题</span>
+          <p>Historique des phases, lois et questions ouvertes selon le format HZDF-2026 : ce qui a été essayé, ce qui a été décidé, ce qui reste ouvert. Le registre par défaut.</p>
+          <span class="mode-tier">Fondamenta et plus</span>
         </div>
         <div class="mode">
           <span class="mode-tag">COMPANY</span>
           <h3>Brief</h3>
           <p>Un brief d'entreprise : TL;DR, KPI, synthèse par poste, risques et prochaines étapes. Pour les salles organisées en départements.</p>
-          <span class="zh">TL;DR · KPI · 岗位汇报 · 风险 · 下一步</span>
+          <span class="mode-tier">Tetto</span>
         </div>
         <div class="mode">
           <span class="mode-tag">FEUDAL</span>
           <h3>Mémoire de cour</h3>
           <p>Un mémoire venu de la frontière : fortune du royaume, campagnes, tribut, bien-être du peuple, et une requête d'instructions impériales.</p>
-          <span class="zh">国祚 · 朝代 · 军情 · 贡赋 · 民生 · 请旨</span>
+          <span class="mode-tier">Tetto</span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section" id="quickstart">
+  <section class="section" id="engine">
     <div class="wrap">
       <div class="section-head">
-        <p class="kicker">Démarrage rapide</p>
-        <h2>Construisez la tour.</h2>
+        <p class="kicker">Le moteur</p>
+        <h2>Ouvert jusqu'au cœur.</h2>
+        <p>Le moteur de coordination — tableau noir, verrous de revendication, portes à preuves, historique en chaîne — est un unique binaire C++17 sans dépendance, open source sous Apache-2.0.</p>
       </div>
-      <div class="term">
-        <div class="term-bar"><i></i><i></i><i></i><span style="margin-left:8px">bash — torre-di-babele</span></div>
-        <pre><span class="c"># compilation (C++17, aucune dépendance tierce ; g++/clang++ ou MSVC)</span>
-<span class="p">$</span> <span class="cmd">git clone https://github.com/HZDF-2026/torre-di-babele && cd torre-di-babele</span>
-<span class="p">$</span> <span class="cmd">make</span>
-<span class="out">built dist/babele</span>
-
-<span class="c"># terminal 1 — démarrer la salle</span>
-<span class="p">$</span> <span class="cmd">./dist/babele serve</span>
-<span class="out">babele serving on http://127.0.0.1:7788</span>
-
-<span class="c"># terminal 2 — l'agent parent parle MCP</span>
-<span class="p">$</span> <span class="cmd">./dist/babele mcp</span>
-<span class="ok">18 tools ready · babele_society · babele_report · babele_task …</span></pre>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="https://github.com/HZDF-2026/torre-di-babele">Voir sur GitHub</a>
+        <a class="btn btn-ghost" href="https://github.com/HZDF-2026/torre-di-babele/blob/main/PROTOCOL.md">Lire le protocole</a>
       </div>
-      <p style="margin-top:26px;color:var(--muted);max-width:60ch">
-        Les sous-agents rejoignent la salle avec <span style="color:var(--gold)">babele say</span> et
-        <span style="color:var(--gold)">babele claim</span> ; le protocole complet, les types de
-        messages et le modèle de lancement se trouvent dans <a href="https://github.com/HZDF-2026/torre-di-babele/blob/main/PROTOCOL.md" style="color:var(--gold);border-bottom:1px solid var(--line)">PROTOCOL.md</a>.
-      </p>
+      <p class="engine-note">Vous travaillez dans TRAE Code ? Le même moteur tourne aussi en CLI locale et serveur MCP — voir le <a href="https://github.com/HZDF-2026/torre-di-babele">dépôt</a>.</p>
     </div>
   </section>
 </main>
