@@ -430,6 +430,81 @@ a { color: inherit; text-decoration: none; }
 
 .engine-note a { color: var(--gold); border-bottom: 1px solid var(--line); }
 
+/* ---------- legal pages ---------- */
+
+.legal { padding: 72px 0 96px; }
+
+.legal-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+  border: 1px solid var(--line);
+  padding: 3px;
+  width: fit-content;
+  margin-bottom: 34px;
+}
+
+.legal-tabs a {
+  font-size: 12px;
+  padding: 5px 12px;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  transition: color 0.15s;
+}
+
+.legal-tabs a:hover { color: var(--ink); }
+
+.legal-tabs a[aria-current="true"] { background: var(--brick); color: #fff8ef; }
+
+.legal h1 {
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: clamp(32px, 5vw, 50px);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+}
+
+.legal .updated { margin-top: 12px; color: var(--faint); font-size: 12.5px; letter-spacing: 0.05em; }
+
+.legal-body { max-width: 76ch; margin-top: 36px; }
+
+.legal-body h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 20px;
+  margin: 42px 0 14px;
+}
+
+.legal-body h2::before { content: "§ "; color: var(--faint); }
+
+.legal-body p { color: var(--muted); font-size: 14px; line-height: 1.75; margin-bottom: 14px; }
+
+.legal-body ul {
+  list-style: none;
+  margin: 0 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.legal-body li {
+  color: var(--muted);
+  font-size: 14px;
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.legal-body li::before { content: "—"; position: absolute; left: 0; color: var(--brick); }
+
+.legal-body a { color: var(--gold); border-bottom: 1px solid var(--line); }
+
+.legal-body strong { color: var(--ink); font-weight: 500; }
+
+.legal-body code { color: var(--gold); font-size: 12.5px; background: none; }
+
+.foot-operator { display: block; width: 100%; color: var(--faint); font-size: 11.5px; letter-spacing: 0.03em; }
+
 /* ---------- footer ---------- */
 
 footer { border-top: 1px solid var(--line-soft); padding: 44px 0 60px; }
